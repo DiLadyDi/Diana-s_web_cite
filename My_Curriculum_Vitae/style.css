@@ -73,6 +73,11 @@ a[href] {
   color: #ffffff;
 }
 
+.special
+{margin-left: 10%;
+margin-right: 0;}
+
+
 
 figure {
   margin-left: 30%;
