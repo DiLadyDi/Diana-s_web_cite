@@ -50,15 +50,13 @@ a[href] {
 
 .blog-navigation {  
   padding: 10px;
-  width: 400px;
+  width: 100%;
   background: #ffffff url("pictures/background.jpg") no-repeat top center;
   border: 5px solid #2d508f;
-  box-sizing: content-box;
-  margin-left: 380px;
+  box-sizing: border-box;  
   margin-top: 10px; 
-  margin-bottom: 10px;   
+  margin-bottom: 10px;     
 }
-
 
 .blog-navigation ul {
   list-style: none;
