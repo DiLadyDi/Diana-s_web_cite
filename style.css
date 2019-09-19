@@ -1,0 +1,155 @@
+body {
+  padding: 0 30px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Arial", sans-serif;
+  color: #222222;
+  background-color: #D9F6FD; 
+}
+
+h1 {
+  font-size: 20px;
+  line-height: normal;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: normal;
+  text-align: center;
+  color: #222222;
+}
+
+p
+{
+  text-indent: 25px;
+}
+
+
+
+a[href] {
+  color: #0099ef;
+  text-decoration: underline;
+}
+
+
+
+
+.avatar-container {
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.top-container{
+  
+  background: #ffffff url("pictures/background.jpg") no-repeat top center;
+  height: 7px;
+}
+
+.blog-navigation {  
+  padding: 10px;
+  width: 400px;
+  background: #ffffff url("pictures/background.jpg") no-repeat top center;
+  border: 5px solid #2d508f;
+  box-sizing: content-box;
+  margin-left: 360px;
+  margin-top: 10px; 
+  margin-bottom: 10px;   
+}
+
+
+.blog-navigation ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.blog-navigation li {
+  margin-bottom: 4px;
+}
+
+.blog-navigation a {
+  color: #ffffff;
+}
+
+
+figure {
+  margin-left: 180px;
+  margin-right: 0;
+
+}
+
+figure img {
+  vertical-align: middle;
+  border: 3px solid #222222;;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+}
+
+figcaption {
+  width: 140px;
+  height: 50px;
+  margin-top: 5px;  
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  font-style: bold;
+  text-align: center;
+  background: #ffffff url("pictures/background.jpg") no-repeat top center;
+  color: white;
+  line-height: 1.5;
+
+}
+
+figure-education {
+  margin-left: 180px;
+  margin-right: 0;
+  
+}
+
+figure-education  img {
+  vertical-align: middle;
+  border: 3px solid #222222;  
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.edu{
+  width: 300px;
+  height: 50px; 
+  
+}
+
+
+
+.dance {
+  width: 160px;
+  height: 70px;
+
+}
+
+
+
+footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  color: #aaaaaa;
+  border-top: 1px solid #aaaaaa;
+  text-align: center;
+}
+
+footer h2
+{color: #aaaaaa;}
+
+
+.page-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 25px;
+  font-family: "Verdana", sans-serif;
+  text-align: center;
+  padding: 0;
+}
+
