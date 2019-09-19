@@ -58,6 +58,7 @@ a[href] {
   margin-bottom: 10px;     
 }
 
+
 .blog-navigation ul {
   list-style: none;
   padding-left: 0;
@@ -74,7 +75,7 @@ a[href] {
 
 
 figure {
-  margin-left: 180px;
+  margin-left: 30%;
   margin-right: 0;
 
 }
@@ -151,6 +152,9 @@ footer h2
   padding: 0;
 }
 
-
 table
 {width: 100%;}
+
+td
+
+{width: 33%;}
