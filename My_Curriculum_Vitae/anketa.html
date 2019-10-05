@@ -5,8 +5,7 @@
     <title>Diana Ageeva</title>
     <link rel="stylesheet" href="style.css">
 
-    <script type="text/php" src="input.php"></script>
-
+    
  </head>
  
 
@@ -14,14 +13,14 @@
 
 <h2>Анкета</h2>
 <form action="input.php" method="POST">
-<form method="post" action="<?= $_SERVER['REQUEST_URI'];?>">
+
 <label>Имя<br> <input type="text" name="name" required></label><br>
 <label>Телефон<br> <input type="text" name="phone" required></label><br>
 <label>Ваше сообщение<br><textarea name="message"></textarea></label><br>
 <input type="submit" value="Send!" />
 </form>
 
-</form>
+
 
 
   </body>
