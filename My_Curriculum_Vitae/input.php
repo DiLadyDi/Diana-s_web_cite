@@ -52,6 +52,8 @@ function clstr($data){
 			$to='diana-ageeva98@mail.ru';
 			$sub='Письмо с сайта';
 			$text='Имя - '.$name.' Телефон - '.' Сообщение: '.$msg;
+
+			mail($to, $sub, $text); 
 			//в переменную положим результат от функции mail false или true
 			$status=mail($to, $sub, $text); 
 			//положим результат в куки с временем хранения 10 сек
