@@ -1,55 +1,27 @@
+
 <?php
-if(isset($_POST['firstname']) && isset($_POST['eduform']) && 
-    isset($_POST['comment']) && isset($_POST['courses'])) 
-{
-    $name = htmlentities($_POST['firstname']);
-    $eduform = htmlentities($_POST['eduform']);
-    $hostel = "РЅРµС‚";
-    if(isset($_POST['hostel'])) $hostel = "РґР°";
-    $comment = htmlentities($_POST['comment']);
-    $courses = $_POST['courses'];
-    $output ="
-    <html>
-    <head>
-    <title>РђРЅРєРµС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ</title>
-    </head>
-    <body>
-    Р’Р°СЃ Р·РѕРІСѓС‚: $name<br />
-    Р¤РѕСЂРјР° РѕР±СѓС‡РµРЅРёСЏ: $eduform<br />
-    РўСЂРµР±СѓРµС‚СЃСЏ РѕР±С‰РµР¶РёС‚РёРµ: $hostel<br />
-    Р’С‹Р±СЂР°РЅРЅС‹Рµ РєСѓСЂСЃС‹:
-    <ul>";
-    foreach($courses as $item)
-        $output.="<li>" . htmlentities($item) . "</li>";
-    $output.="</ul></body></html>";
-    echo $output;
+//для начала опишем функцию очистки данных от лишних пробелов и тегов
+function clstr($data){
+ return trim(strip_tags($data));
 }
-else
-{   
-    echo "Р’РІРµРґРµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹";
+//если метод обращения совпадает, то обрабатываем данные из массива $_POST
+if($_SERVER['REQUEST_METHOD']=='POST'){
+	$name = clstr($_POST['name']);
+	$phone = clstr($_POST['phone']);
+	$msg = clstr($_POST['message']);
+		//проверим наши переменные на пустоту
+		if(!empty($name)&&!empty($phone)&&!empty($msg)){
+			$to='diana-ageeva98@mail.ru';
+			$sub='Письмо с сайта';
+			$text='Имя - '.$name.' Телефон - '.' Сообщение: '.$msg;
+			//в переменную положим результат от функции mail false или true
+			$status=mail($to, $sub, $text); 
+			//положим результат в куки с временем хранения 10 сек
+			setcookie('status_mail', $status, time()+10);
+			header('Location:'.$_SERVER['REQUEST_URI']); 
+		}
+}
+if($_COOKIE['status_mail']==true){
+echo "Сообщение отправлено";
 }
 ?>
-
-
-
-<h2>Анкета</h2>
-<form action="input.php" method="POST">
-<p>Введите имя:<br> 
-<input type="text" name="firstname" /></p>
-<p>Форма обучения: <br> 
-<input type="radio" name="eduform" value="очно" />очно <br>
-<input type="radio" name="eduform" value="заочно" />заочно </p>
-<p>Требуется общежитие:<br>
-<input type="checkbox" name="hostel" />Да</p>
-<p>Выберите курсы: <br>
-<select name="courses[]" size="5" multiple="multiple">
-    <option value="ASP.NET">ASP.NET</option>
-    <option value="PHP">PHP</option>
-    <option value="Ruby">RUBY</option>
-    <option value="Python">Python</option>
-    <option value="Java">Java</option>
-</select></p>
-<p>Краткий комментарий: <br>
-<textarea name="comment" maxlength="200"></textarea></p>
-<input type="submit" value="Выбрать">
-</form>
