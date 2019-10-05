@@ -19,12 +19,6 @@ h2 {
   color: #222222;
 }
 
-.div_special
-{ 
-  text-align: center;
-  color:darkblue;
-  text-decoration: underline;
-}
 
 p
 {
@@ -50,9 +44,10 @@ a[href] {
 }
 
 .top-container{
-  
   background: #ffffff url("pictures/background.jpg") no-repeat top center;
   height: 7px;
+  margin-top: 10px; 
+  margin-bottom: 10px;     
 }
 
 .blog-navigation {  
@@ -171,3 +166,10 @@ table
 
 section
 {width: 100%;}
+
+.div_special
+{ 
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}

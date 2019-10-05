@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Diana Ageeva</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+
 
     
  </head>
@@ -17,22 +20,21 @@
 <br>
       <div class='avatar-container'>
         <img class="avatar" src="pictures/avatar.png" width="100" height="100" alt="Diana's photo">
-      </div>
+      </div>      <br>
 
       <div class='top-container'></div>
 
 
+
 <h2>Thank you! </h2> 
-<p>Your message successfully sent.  </p>
-<p>I will reply as soon as possible!</p>
+<p><span class="glyphicon glyphicon-star" ></span> Your message successfully sent.  </p>
+<p><span class="glyphicon glyphicon-star" ></span> I will reply as soon as possible!</p>
 
 
 
 <br><br><br><br>
-<nav>
-        <a href="main_page.html" target="_self"> <img width='30' src='pictures/back.png' > </a><br>
-        <back> to the main page</back>
-       
+<nav>     
+       <span class="glyphicon glyphicon-arrow-left" ></span> <a href="main_page.html" target="_self"><back> to the main page</back></a>       
 </nav>    
 
 
