@@ -5,10 +5,17 @@
     <title>Diana Ageeva</title>
     <link rel="stylesheet" href="style.css">
 
-  </head>
+    <script type="text/javascript" src="jq.js"></script>
+
+ </head>
  
 
   <body>
+
+
+
+
+
     <div class='top-container'></div>
     <header>
       <h1 class="page-title">Diana Ageeva</h1>
@@ -22,18 +29,39 @@
 
       <div class='top-container'></div>
 
-      <nav class="blog-navigation">        
-        <ul>
+      <h2>CONTENT</h2>     
+      <div class='div_special'  ><span id="test3">hide</span> <span id="test4">|| show</span></div> 
+
+      <nav class="blog-navigation">   
+      
+        <ul id='list'>
+          
           <li><a href=#info>General info</a></li>
           <li><a href=#languages>Languages</a></li>
           <li><a href=#education>Education</a></li>     
           <li><a href="sport.html" target="_blank">Sport achivements</a></li>  
           <li><a href="https://www.instagram.com/dueteam/" target="_blank">Dancing family</a></li>   
-          <li><a href=#contacts>Contact info</a></li>                
+          <li><a href=#contacts>Contact info</a></li>     
+
+          
+
         </ul>
       </nav>
 
+
+<script>
+$("#test3").click(function(){
+    $("li").slideUp("slow");
+  });
+ $("#test4").click(function(){
+    $("li").slideDown("slow");
+  });
+
+</script>
+
+
       <div class='top-container'></div>
+
 
       <section>
         <h2 id='info'>About me</h2>
@@ -101,6 +129,7 @@
       </section>
 
 <div class='top-container'></div>
+
      
     </main>
 
@@ -111,7 +140,22 @@
       <p>VK: <a href='https://vk.com/id13321376' target="_blank">Diana Ageeva</a></p>
       <p>Instagram: <a href='https://www.instagram.com/ageeva.di/' target="_blank">ageeva.di</a></p>
 
+            <p>   
+ <script type="text/javascript">    
+   for (var i = 0; i < 10; ++i) 
+    {document.write("Diana_Ageeva_");}  
+   </script>  
+ </p> 
+ 
+
     </footer>
+
+
+
+
+
+
+
 
   </body>
 </html>

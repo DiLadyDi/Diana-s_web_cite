@@ -19,6 +19,13 @@ h2 {
   color: #222222;
 }
 
+.div_special
+{ 
+  text-align: center;
+  color:darkblue;
+  text-decoration: underline;
+}
+
 p
 {
   text-indent: 25px;
