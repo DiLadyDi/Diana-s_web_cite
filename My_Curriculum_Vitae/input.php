@@ -27,6 +27,15 @@
 <p>I will reply as soon as possible!</p>
 
 
+
+<br><br><br><br>
+<nav>
+        <a href="main_page.html" target="_self"> <img width='30' src='pictures/back.png' > </a><br>
+        <back> to the main page</back>
+       
+</nav>    
+
+
 <?php
 //для начала опишем функцию очистки данных от лишних пробелов и тегов
 function clstr($data){
