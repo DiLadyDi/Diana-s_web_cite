@@ -6,7 +6,7 @@ const e = React.createElement;
 
 
 
-class BirthdayButton extends React.Component {
+class TurnsButton extends React.Component {
 
   constructor(props) {
 
@@ -22,7 +22,7 @@ class BirthdayButton extends React.Component {
 
     if (this.state.pushed) {
 
-      return 'My birthday: 28th September';
+      return '166 turns in one minute!!!';
 
     }
 
@@ -34,7 +34,7 @@ class BirthdayButton extends React.Component {
 
       { onClick: () => this.setState({ pushed: true }) },
 
-      'Birthday?'
+      'click here to get RECORD results'
 
 
     );
@@ -45,6 +45,6 @@ class BirthdayButton extends React.Component {
 
 
 
-const domContainer = document.querySelector('#birthday_button_container');
+const domContainer = document.querySelector('#turns_button_container');
 
-ReactDOM.render(e(BirthdayButton), domContainer);
+ReactDOM.render(e(TurnsButton), domContainer);
